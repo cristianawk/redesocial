@@ -1,8 +1,9 @@
 {#{% extends "@App/Layouts/layout.html.twig" %}#}
 {% extends "AppBundle:Layouts:layout.html.twig" %}
 
-{% block javascript %}
+{% block javascripts %}
     {{ parent() }}
+    <script src="{{ asset('assets/js/custom/buttons-following.js') }}"></script>
     <script src="{{ asset('assets/js/custom/users.js') }}"></script>
 {% endblock %}
 
